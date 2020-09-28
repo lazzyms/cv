@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+.card-shadow {
+  box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border-radius: 15px !important;
+}
+
+@media print {
+  .pdfDownload {
+    display: none;
+  }
+}

@@ -1,0 +1,84 @@
+{
+    "personal": {
+        "name": "Maulik Sompura",
+        "photo": "https://en.gravatar.com/userimage/62021415/e089f53cccdf7d28e7b08db4664a1d72.jpg?size=200",
+        "email": "maulik.sompura06@gmail.com",
+        "blog": "https://mauliksompura.in/",
+        "phone": "+918905778997",
+        "github": "httsp://github.com/lazzyms",
+        "skype": "https://join.skype.com/invite/Ygy87xceciqE"
+    },
+    "summary": [
+        "I'm a Full-stack developer with 3+ years of experience in web and backend development. I'm Good at making REST APIs, third party APIs & library integration and Business logic."
+    ],
+    "skills": {
+        "primary": [
+            "NodeJs",
+            "ReactJs",
+            "MySQL",
+            "MongoDB",
+            "PHP (Core & CodeIgniter)",
+            "LoopbackJS",
+            "Web Designing (HTML, CSS, JS)"
+        ],
+        "familiar": [
+            "AWS EC2 & S3",
+            "Cloudinary APIs",
+            "Firebase Authentication & Real-time Database",
+            "Payment Gateway Integration",
+            "Gitlab CI/CD & Docker",
+            "Photoshop",
+            "Networking"
+        ]
+    },
+    "projects": [
+        {
+            "title": "Vrindavan Furniture",
+            "description": "Made a dynamic catalogue website for Vrindavan Furnitures in CodeIgniter with MySQL, Bootstrap, jQuery & HTML. Used Cloudinary to store images.",
+            "link": "https://vrindavanfurniture.com"
+        }
+    ],
+    "experience": [
+        {
+            "company": "Pardy Panda Studios Pvt. Ltd.",
+            "location": "Vadodara, Gujarat",
+            "position": "Web-backend Developer",
+            "startedAt": "January, 2019",
+            "endedAt": "",
+            "work": [
+                "Worked on a Reservation & Hotel management app backend (RESTful APIs with NodeJS)",
+                "Built a dashboard for lunch-providers app with ReactJs",
+                "Built Firebase Authentication base app using Firebase APIs and NodeJs & MongoDB",
+                "Built Email templates in ERP (for mutual funds based firm) using Laravel",
+                "Integrated various payment gateway like stripe (gateway & payout), paytm, elavon (converge & fusebox), shift4, freedompay",
+                "Setup and maintained AWS EC2 instance for projects I worked on",
+                "Worked on third-party APIs like Spoonacular, Firebase, Infor & Agilysys (Room Reservation and Hotel management)"
+            ]
+        },
+        {
+            "company": "Helimp Softomation, LLC",
+            "location": "Vadodara, Gujarat",
+            "position": "Web Developer",
+            "startedAt": "July, 2017",
+            "endedAt": "October, 2018",
+            "work": [
+                "Built an ERP system for PCB manufaturing firms having various modules like BOM, Sales, Purchase, Invoice, Inventory, Users (Phalcon PHP and MySQL Database)",
+                "Simple HTML to PDF converting library for PHP",
+                "Made Cross-platform desktop app using ElectronJs"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institute": "G.E.C. Bhavnagar (Gujarat Technological University)",
+            "degree": "B.E. Computer Engineering",
+            "batch": "2013-2017",
+            "grades": "CPI: 7.50 | SPI: 7.83"
+        }
+    ],
+    "dream": [
+        "My dream job/project would include working with new technologies and open environment.", 
+        "My preferred locations for job is Vadodara, Pune, Banglore (For superb opportunity, I can negotiate).",
+        "Salary: ₹6L+"
+    ]
+}

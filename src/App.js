@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
+import { Header, Summary, Skills, Projects, Experience, Education, DreamJob } from './components'
+import resume from './resume.json'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Container>
+        <Row className="justify-content-center my-5">
+          <Col>
+            <Header personal={resume.personal} />
+            <Summary data={resume.summary} />
+            <Skills primary={resume.skills.primary} familiar={resume.skills.familiar} />
+            <Projects projects={resume.projects} />
+            <Experience jobs={resume.experience} />
+            <Education edu={resume.education} />
+            <DreamJob dream={resume.dream} />
+          </Col>
+        </Row>
+      </Container>
+    </React.Fragment>
   );
 }
 
