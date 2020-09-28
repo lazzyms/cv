@@ -19,6 +19,10 @@ function App() {
             <Experience jobs={resume.experience} />
             <Education edu={resume.education} />
             <DreamJob dream={resume.dream} />
+            <Row className="justify-content-center mt-5 p-5 align-items-center bg-info text-white">
+              <h2>Thanks,<br/></h2>
+              <h2>Maulik Sompura</h2>
+            </Row>
           </Col>
         </Row>
       </Container>

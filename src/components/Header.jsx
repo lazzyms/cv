@@ -17,9 +17,9 @@ import md5 from "md5";
 function downloadPdf() {
   console.log("clicked");
   let accessKey = process.env.REACT_APP_PDF_ACCESSKEY;
-  let secretKey = md5("https://me.mauliksompura.in/resume-builderalohamora");
+  let secretKey = md5("https://me.mauliksompura.in/react-resume/alohamora");
   let baseUrl = "http://api.pdflayer.com/api/convert";
-  let myUrl = encodeURI("https://me.mauliksompura.in/resume-builder");
+  let myUrl = encodeURI("https://me.mauliksompura.in/react-resume/");
 
   let pageSize = "Tabloid";
   window.location.href =
@@ -32,7 +32,7 @@ function downloadPdf() {
     myUrl +
     "&use_print_media=1&page_size=" +
     pageSize +
-    "&viewport=2560x1440&watermark_in_background=0&creator=mauliksompura.in&author=Maulik&custom_unit=px&margin_top=50&margin_bottom=0&margin_left=0&margin_right=0&force=1";
+    "&viewport=2560x1440&watermark_in_background=0&creator=mauliksompura.in&author=Maulik&custom_unit=px&margin_top=50&margin_bottom=0&margin_left=0&margin_right=0&force=1&&delay=3000";
 }
 
 function Header(props) {
@@ -67,7 +67,7 @@ function Header(props) {
           <Button
             variant="outline-secondary mx-1"
                       download="mauliksompura-cv.pdf"
-                      className="pdfDownload"
+                      className="pdfDownload d-none"
             onClick={() => downloadPdf()}
           >
             <FaFilePdf /> Download Resume
