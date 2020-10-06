@@ -11,7 +11,9 @@ import {
   FaGithub,
   FaSkype,
   FaFilePdf,
+  FaLinkedin
 } from "react-icons/fa";
+import { DiStackoverflow } from "react-icons/di";
 import md5 from "md5";
 
 function downloadPdf() {
@@ -64,10 +66,16 @@ function Header(props) {
           <Button variant="outline-secondary" href={props.personal.skype}>
             <FaSkype />
           </Button>
+          <Button variant="outline-secondary" href={props.personal.linkedIn}>
+            <FaLinkedin />
+          </Button>
+          <Button variant="outline-secondary" href={props.personal.stackoverflow}>
+            <DiStackoverflow />
+          </Button>
           <Button
             variant="outline-secondary mx-1"
-                      download="mauliksompura-cv.pdf"
-                      className="pdfDownload d-none"
+            download="mauliksompura-cv.pdf"
+            className="pdfDownload d-none"
             onClick={() => downloadPdf()}
           >
             <FaFilePdf /> Download Resume
