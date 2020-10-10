@@ -11,7 +11,7 @@ import {
   FaGithub,
   FaSkype,
   FaFilePdf,
-  FaLinkedin
+  FaLinkedin,
 } from "react-icons/fa";
 import { DiStackoverflow } from "react-icons/di";
 import md5 from "md5";
@@ -40,50 +40,55 @@ function downloadPdf() {
 function Header(props) {
   return (
     <Row className="justify-content-center align-items-center">
-      <Col md="9">
-        <h1 className="text-info text-uppercase font-weight-bold display-3">
+      <Col md="12" sm="12" className="mb-3 text-center">
+        <Image src={props.personal.photo} roundedCircle className="shadow" />
+      </Col>
+      <Col md="12" sm="12">
+        <h1 className="text-light text-uppercase text-center font-weight-bold display-3">
           {props.personal.name}
         </h1>
-        <ButtonGroup>
-          <Button
-            variant="outline-secondary"
-            href={"mailto:" + props.personal.email}
-          >
-            <FaEnvelope />
-          </Button>
-          <Button variant="outline-secondary" href={props.personal.blog}>
-            <FaBloggerB />
-          </Button>
-          <Button
-            variant="outline-secondary"
-            href={"tel:" + props.personal.phone}
-          >
-            <FaPhoneAlt />
-          </Button>
-          <Button variant="outline-secondary" href={props.personal.github}>
-            <FaGithub />
-          </Button>
-          <Button variant="outline-secondary" href={props.personal.skype}>
-            <FaSkype />
-          </Button>
-          <Button variant="outline-secondary" href={props.personal.linkedIn}>
-            <FaLinkedin />
-          </Button>
-          <Button variant="outline-secondary" href={props.personal.stackoverflow}>
-            <DiStackoverflow />
-          </Button>
-          <Button
-            variant="outline-secondary mx-1"
-            download="mauliksompura-cv.pdf"
-            className="pdfDownload d-none"
-            onClick={() => downloadPdf()}
-          >
-            <FaFilePdf /> Download Resume
-          </Button>
-        </ButtonGroup>
-      </Col>
-      <Col md="3">
-        <Image src={props.personal.photo} roundedCircle className="shadow" />
+        <Row className="text-center justify-content-center">
+          <ButtonGroup>
+            <Button
+              variant="light"
+              href={"mailto:" + props.personal.email}
+            >
+              <FaEnvelope />
+            </Button>
+            <Button variant="light" href={props.personal.blog}>
+              <FaBloggerB />
+            </Button>
+            <Button
+              variant="light"
+              href={"tel:" + props.personal.phone}
+            >
+              <FaPhoneAlt />
+            </Button>
+            <Button variant="light" href={props.personal.github}>
+              <FaGithub />
+            </Button>
+            <Button variant="light" href={props.personal.skype}>
+              <FaSkype />
+            </Button>
+            <Button variant="light" href={props.personal.linkedIn}>
+              <FaLinkedin />
+            </Button>
+            <Button
+              variant="light"
+              href={props.personal.stackoverflow}
+            >
+              <DiStackoverflow />
+            </Button>
+            {/* <Button
+              variant="light mx-1"
+              download="mauliksompura-cv.pdf"
+              className="pdfDownload d-none"
+              onClick={() => downloadPdf()}
+            >
+              <FaFilePdf /> Download Resume
+            </Button> */}
+          </ButtonGroup>
+        </Row>
       </Col>
     </Row>
   );

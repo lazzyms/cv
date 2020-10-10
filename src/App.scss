@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   font-family: "Roboto", sans-serif !important;
+  // background-image: url('./bg.gif');
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background: linear-gradient(-60deg, #565c5e, #455954,  #9d7463, #b5c2c7, #dfdbd8);
+  background-size: 400% 400%;
+  animation: gradientBG 20s ease infinite;
 }
 
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
@@ -10,8 +16,48 @@ body {
   border-radius: 15px !important;
 }
 
-// @media print {
-//   .pdfDownload {
-//     display: none;
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+// $colormap: (
+//   one: #d7d0ca,
+//   two: #6abec4,
+//   three: #163b46,
+//   four: #f7ccb2,
+//   five: #d4966a,
+//   six: #d4966a
+// );
+
+// @function map-reach($map, $keys...) {
+//   @each $key in $keys {
+//     $map: map-get($map, $key);
+//   }
+//   @return $map;
+// }
+
+// @keyframes animation-colors {
+//   0% {
+//     background-color: map-reach($colormap, one);
+//   }
+//   25% {
+//     background-color: map-reach($colormap, two);
+//   }
+//   50% {
+//     background-color: map-reach($colormap, three);
+//   }
+//   75% {
+//     background-color: map-reach($colormap, four);
+//   }
+//   100% {
+//     background-color: map-reach($colormap, one);
 //   }
 // }

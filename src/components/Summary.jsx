@@ -8,7 +8,7 @@ function Summary(props) {
     <Row className="justify-content-center mt-5 align-items-center">
       <Col>
         <Card className="card-shadow border-0">
-          <Card.Header>Bio</Card.Header>
+          <Card.Header>Summary</Card.Header>
           <Card.Body>
             <Card.Text>{props.data}</Card.Text>
           </Card.Body>
