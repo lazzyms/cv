@@ -7,7 +7,7 @@ function Projects(props) {
   return (
     <Row className="justify-content-center mt-5 align-items-center">
       <Col>
-        <Card className="card-shadow border-0">
+        <Card className="card-shadow border-0 bg-dark text-light">
           <Card.Header>Projects</Card.Header>
           <Card.Body className="m-3">
             {props.projects.map((x, i) => (

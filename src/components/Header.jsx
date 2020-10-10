@@ -2,7 +2,6 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Button from "react-bootstrap/Button";
 import {
   FaEnvelope,
@@ -10,32 +9,9 @@ import {
   FaPhoneAlt,
   FaGithub,
   FaSkype,
-  FaFilePdf,
   FaLinkedin,
 } from "react-icons/fa";
 import { DiStackoverflow } from "react-icons/di";
-import md5 from "md5";
-
-function downloadPdf() {
-  console.log("clicked");
-  let accessKey = process.env.REACT_APP_PDF_ACCESSKEY;
-  let secretKey = md5("https://me.mauliksompura.in/react-resume/alohamora");
-  let baseUrl = "http://api.pdflayer.com/api/convert";
-  let myUrl = encodeURI("https://me.mauliksompura.in/react-resume/");
-
-  let pageSize = "Tabloid";
-  window.location.href =
-    baseUrl +
-    "?access_key=" +
-    accessKey +
-    "&secret_key=" +
-    secretKey +
-    "&test=1&document_name=maulik-resume.pdf&document_url=" +
-    myUrl +
-    "&use_print_media=1&page_size=" +
-    pageSize +
-    "&viewport=2560x1440&watermark_in_background=0&creator=mauliksompura.in&author=Maulik&custom_unit=px&margin_top=50&margin_bottom=0&margin_left=0&margin_right=0&force=1&&delay=3000";
-}
 
 function Header(props) {
   return (
@@ -47,8 +23,7 @@ function Header(props) {
         <h1 className="text-light text-uppercase text-center font-weight-bold display-3">
           {props.personal.name}
         </h1>
-        <Row className="text-center justify-content-center">
-          <ButtonGroup>
+        <Row className="justify-content-center">
             <Button
               variant="light"
               href={"mailto:" + props.personal.email}
@@ -79,15 +54,6 @@ function Header(props) {
             >
               <DiStackoverflow />
             </Button>
-            {/* <Button
-              variant="light mx-1"
-              download="mauliksompura-cv.pdf"
-              className="pdfDownload d-none"
-              onClick={() => downloadPdf()}
-            >
-              <FaFilePdf /> Download Resume
-            </Button> */}
-          </ButtonGroup>
         </Row>
       </Col>
     </Row>

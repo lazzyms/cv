@@ -7,7 +7,7 @@ function Education(props) {
   return (
     <Row className="justify-content-center mt-5 align-items-center">
       <Col>
-        <Card className="card-shadow border-0">
+        <Card className="card-shadow border-0 bg-dark text-light">
           <Card.Header>Education</Card.Header>
           <Card.Body>
             {props.edu.map((x,i) => (

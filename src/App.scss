@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   font-family: "Roboto", sans-serif !important;
-  // background-image: url('./bg.gif');
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
   background: linear-gradient(-60deg, #565c5e, #455954,  #9d7463, #b5c2c7, #dfdbd8);
   background-size: 400% 400%;
   animation: gradientBG 20s ease infinite;
@@ -14,6 +11,10 @@ body {
 .card-shadow {
   box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   border-radius: 15px !important;
+}
+
+.btn {
+  margin:0 5px !important;
 }
 
 @keyframes gradientBG {

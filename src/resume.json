@@ -5,13 +5,18 @@
         "email": "maulik.sompura06@gmail.com",
         "blog": "https://mauliksompura.in/",
         "phone": "+918905778997",
-        "github": "httsp://github.com/lazzyms",
+        "github": "https://github.com/lazzyms",
         "skype": "https://join.skype.com/invite/Ygy87xceciqE",
         "stackoverflow": "https://stackoverflow.com/cv/lazzy_ms",
-        "linkedIn": "https://www.linkedin.com/in/mauliksompura/"
+        "linkedIn": "https://www.linkedin.com/in/mauliksompura/",
+        "instagram":"https://www.instagram.com/lazzy_ms/",
+        "facebook":"https://www.facebook.com/lazzy.ms",
+        "twitter": "https://twitter.com/lazzy_ms",
+        "medium": "https://medium.com/@lazzy_ms",
+        "reddit": "https://www.reddit.com/user/lazzy_ms"
     },
     "summary": [
-        "I'm a Full-stack developer with 3+ years of experience in web and backend development. I'm Good at making REST APIs, third party APIs & library integration and Business logic."
+        "I'm a Full-stack developer with 3+ years of experience in web backend development. I'm Good at making REST APIs, third party APIs & library integration, Business logic and little bit of designing."
     ],
     "skills": {
         "primary": [
