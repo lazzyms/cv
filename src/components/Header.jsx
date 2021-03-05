@@ -40,7 +40,7 @@ function Header(props) {
         <Image src={props.personal.photo} roundedCircle className="shadow" />
       </Col>
       <Col md="12" sm="12">
-        <h1 className="text-light text-uppercase text-center font-weight-bold display-3">
+        <h1 className="text-light text-uppercase text-center font-weight-bold display-3" style={{  textShadow: '4px 4px #5d5d5d'}}>
           {props.personal.name}{" "}
           
         </h1>
